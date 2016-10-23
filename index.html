@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>四达集团新BOSS开发团队周工作量统计系统</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/kube.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+	<script type="text/javascript" src="/js/plugins/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/kube.min.js"></script>
+	<script type="text/javascript" src="/js/index.js"></script>
+</head>
+<body>
+	<header class='head hidden'>四达集团新BOSS开发团队周工作量统计系统</header>
+	<div class="buttonarea">
+		<input type="button" value='查看数据' id='getlist' class="button primary outline"/>
+		<input type="button" value='新增数据' id='createdata' class="button primary outline"/>
+	</div>
+	<div class='main'>
+		<form id='form1' class='form'>
+			<fieldset>
+				<legend>工作统计</legend>
+				<div class="form-item">
+					<label for='name'>姓名：<span class="req">*</span></label>
+					<input type='text' name='name' id='name'/>
+				</div>
+				<div class="form-item">
+					<label for='workDays'>工作天数：<span class="req">*</span></label>
+					<input type='text' name='workDays' id='workDays'/>
+				</div>
+				<div class="form-item">
+					<label for='workHours'>加班小时：<span class="req">*</span></label>
+					<input type='text' name='workHours' id='workHours' value='0' />
+				</div>
+				<input type="button" value='提交' id='submit' class="button primary submit"/>
+			</fieldset>
+		</form>
+	</div>
+	
+	<div class='data'>
+		<table class="striped hidden">
+			<thead>
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>工作天数</th>
+					<th>加班时间(h)</th>
+				</tr>
+			</thead>
+			<tbody id='tbody'>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<!-- <div id="my-alert" class="alert success" data-component="alert">
+	    <span class="close small"></span>
+	    数据新增成功！
+	</div> -->
+	
+</body>
+</html>

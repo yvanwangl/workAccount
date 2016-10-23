@@ -1,0 +1,71 @@
+* {
+	font-family: '微软雅黑' !important;
+	font-size: 16px;
+}
+.head {
+	text-align: center;
+	font-size: 24px;
+	padding: 15px;
+	background-color: #a55f67;
+	color: #fff;
+}
+.hidden {
+	display: none;
+}
+.main {
+	position: absolute;
+	width:63%;
+	top:50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding:50px 20px;
+}
+.main legend {
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1;
+}
+.main fieldset {
+	border:1px solid #a55f67;
+}
+.form label {
+	font-size: 16px;
+}
+.button.primary {
+	width: 30%;
+    background: #a55f67;
+    margin: 10px;
+	font-size:16px;
+}
+.button.primary.submit {
+	width: 100%;
+}
+.button.primary.outline {
+	color: #a55f67;
+    border-color: #a55f67;
+}
+.button.primary.outline:hover {
+	color: #C74A58;
+    border-color: #C74A58;
+}
+
+.data {
+	margin: 0 auto;
+	width: 80%;
+}
+
+table.striped tr:nth-child(odd) td {
+    background: rgba(96,174,77,.15);
+}
+
+table.striped tr td,
+table.striped tr th {
+	text-align: center;
+}
+
+.buttonarea {
+	text-align: center;
+}
